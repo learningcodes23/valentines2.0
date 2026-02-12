@@ -1,130 +1,145 @@
-body {
-    margin: 0;
-    overflow: hidden;
-}
+/* style.css */
 
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: none;
-}
-
-.slide.active {
-display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
+/* 1. Global Styles */
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1E90FF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E90FF; /* Dodger Blue */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* */
+    overflow: hidden; /* */
 }
 
-
+/* 2. Slide Logic */
 .slide {
-    display: none; 
+    display: none; /* Default na tago ang lahat */
     width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide.active {
-    display: flex; 
-    justify-content: center;
+    display: flex; /* Lalabas lang ang slide na may 'active' class */
 }
 
+/* 3. The Card (Fit-to-Content) */
 .card {
-    background-color: #E0F2FE; 
-    border: 4px solid #B0E0E6; 
-    border-radius: 40px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
+    background-color: #E0F2FE; /* Baby Blue */
+    border: 4px solid #B0E0E6; /* Powder Blue */
+    border-radius: 40px; /* */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* */
     
-    display: inline-flex;     
-    flex-direction: column;
-    align-items: center;
+    /* Layout para sumunod sa laki ng text at images */
+    display: flex; /* */
+    flex-direction: column; /* */
+    align-items: center; /* */
     
-   
-    width: auto;               
-    height: auto;
-    min-width: 280px;          
-    max-width: 85vw;           
+    width: auto; /* */
+    height: auto; /* */
+    min-width: 280px; /* */
+    max-width: 85vw; /* */
     
-
-    padding: 35px 45px;       
-    gap: 20px;                 
-    
-    text-align: center;
+    padding: 35px 45px; /* Saktong space sa loob */
+    gap: 20px; /* Space sa pagitan ng items */
+    text-align: center; /* */
 }
 
-
+/* 4. Containers (Icons, Envelopes) */
 .icon-box, .envelope-box, .proposal-box {
-    width: 180px;
-    height: 180px;
-    border: 3px solid #007BA7; 
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
+    width: 180px; /* */
+    height: 180px; /* */
+    border: 3px solid #007BA7; /* Cerulean */
+    border-radius: 30px; /* */
+    overflow: hidden; /* */
+    display: flex; /* */
+    justify-content: center; /* */
+    align-items: center; /* */
+    background: white; /* */
 }
 
 img {
-    width: 90%;
-    height: auto;
+    width: 90%; /* */
+    height: auto; /* */
 }
 
-
+/* 5. Typography */
 h1, h2, .question, .instruction {
     color: #007BA7; /* Cerulean */
-    margin: 0;
+    margin: 0; /* */
 }
 
 .kaomoji {
-    color: #5F9EA0; 
-    font-size: 1.4rem;
-    font-weight: bold;
+    color: #5F9EA0; /* Cadet Blue */
+    font-size: 1.4rem; /* */
+    font-weight: bold; /* */
 }
 
-
+/* 6. Buttons */
 .button-group, .button-row {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
+    display: flex; /* */
+    flex-direction: column; /* */
+    gap: 12px; /* */
+    width: 100%; /* */
 }
 
 .button-row {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    flex-direction: row; /* Para sa Slide 5 */
+    justify-content: center; /* */
+    align-items: center; /* */
+    gap: 15px; /* */
 }
 
 button {
-    background-color: transparent;
-    border: 3px solid #007BA7; /* Cerulean outline */
-    color: #007BA7;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.3s;
+    background-color: transparent; /* */
+    border: 3px solid #007BA7; /* */
+    color: #007BA7; /* */
+    padding: 12px 30px; /* */
+    border-radius: 50px; /* */
+    font-weight: bold; /* */
+    font-size: 1rem; /* */
+    cursor: pointer; /* */
+    text-transform: uppercase; /* */
+    transition: 0.3s; /* */
 }
 
 button:hover {
-    background-color: #007BA7;
-    color: white;
+    background-color: #007BA7; /* */
+    color: white; /* */
 }
 
 .or-text {
-    color: #007BA7;
-    font-weight: bold;
+    color: #007BA7; /* */
+    font-weight: bold; /* */
+}
+
+/* 7. Slide 7 Ticket Specifics */
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.ticket {
+    width: 200px; /* Eksaktong sukat para hindi dambuhala */
+    padding: 0; /* Alisin ang button padding */
+    border: none; /* Alisin ang blue border */
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.ticket:hover {
+    background: none; /* Iwas asul na flash sa hover */
+    transform: scale(1.05);
+}
+
+.ticket img {
+    width: 100%; /* Gamitin ang 200px ng button */
+    height: auto;
+    border-radius: 15px;
 }
