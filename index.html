@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Valentines Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="slide active" id="slide1">
+<div class="card">
+<div class="icon-box">
+<img src="https://stickerly.pstatic.net/sticker_pack/r0BkI8AOmRViMavaPnn8Sw/EMXVDB/31/1040c03e-c8fc-40f7-aac8-203642debf73.webp" alt="Cute Icon">
+</div>
+<h1>Happy Valentine's Month, My Betty</h1>
+<div class="kaomoji">(,,> u <,,)</div>
+<p class="instruction">Click the Proceed button!</p>
+<button onclick="goToSlide2()">PROCEED</button>
+</div>
+</div>
+
+<div class="slide" id="slide2">
+<div class="card">
+<div class="kaomoji">(,,^ u ^,,)</div>
+<div class="envelope-box">
+<img src="envelope.png" alt="Love Letter">
+</div>
+<h2 class="question">Do you want to open it?</h2>
+<div class="button-group">
+<button onclick="goToSlide4()">OF COURSE</button>
+<button onclick="goToSlide3()">NO, THANKS</button>
+</div>
+</div>
+</div>
+
+<div class="slide" id="slide3">
+<div class="card">
+<div class="icon-box">
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjcwMHVrbTVzMWh3bnVkaGFldm91ZW5rZXlhNmZ3dGNoejZpaWZvMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ghXitlPhJSsMzpAQvD/giphy.gif" alt="Crying Zookiz">
+</div>
+<h1>NOoooOoo, PLEASE TRY TO OPEN IT!</h1>
+<button onclick="goToSlide2()">GO BACK</button>
+</div>
+</div>
+
+<div class="slide" id="slide4">
+<div class="card">
+<div class="icon-box">
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGRjcGExd3l2bGF5Y2RhdDVxbHBpdndyaDA4MDlxMGt6cTdoNzhqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/z9WAlV4MUvpU4/giphy.gif" alt="Dancing Bear">
+</div>
+<h1>YIPPIEE! THANK U SO MUCH!</h1>
+<button onclick="goToSlide5()">PROCEED</button>
+</div>
+</div>
+
+<div class="slide" id="slide5">
+<div class="card">
+<div class="proposal-box">
+<img src="envelope.png" alt="Will you be my Valentine?">
+</div>
+<div class="button-row">
+<button onclick="goToSlide7()">YESSSS</button>
+<span class="or-text">OR</span>
+<button onclick="goToSlide6()">NooOo</button>
+</div>
+</div>
+</div>
+
+<div class="slide" id="slide6">
+<div class="card">
+<div class="icon-box">
+<img src="ericka_sad.jpg" alt="Sad Ericka">
+</div>
+<h1>R U SURE):</h1>
+<button onclick="goToSlide5()">GO BACK</button>
+</div>
+</div>
+
+<div class="slide" id="slide7">
+<div class="card">
+<h1>PICK A HEART TICKET TO PROCEED!</h1>
+<div class="ticket-container">
+<button class="ticket" onclick="alert('Pink Ticket Selected!')">
+<img src="pticket_1.png" alt="Pink Heart Ticket">
+</button>
+<button class="ticket" style="background-color: #e2a08d;" onclick="alert('Peach Ticket Selected!')">
+<img src="ticket_2.png" alt="Peach Heart Ticket">
+</button>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

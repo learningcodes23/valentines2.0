@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.slide.active {
+    display: flex;
+}
+/* Base Layout */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1E90FF; /* Dodger Blue */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Slide Visibility Logic */
+.slide {
+    display: none; /* Lahat ng slides ay nakatago default */
+    width: 100%;
+}
+
+.slide.active {
+    display: flex; /* Lalabas lang kapag may 'active' class */
+    justify-content: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: #E0F2FE; /* Baby Blue */
+    width: 340px;
+    padding: 40px 25px;
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Spacing sa pagitan ng items */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 4px solid #B0E0E6;
+}
+
+/* Icon & Image Containers */
+.icon-box, .envelope-box, .proposal-box {
+    width: 180px;
+    height: 180px;
+    border: 3px solid #007BA7; /* Cerulean */
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+img {
+    width: 90%;
+    height: auto;
+}
+
+/* Text Colors */
+h1, h2, .question, .instruction {
+    color: #007BA7; /* Cerulean */
+    margin: 0;
+}
+
+.kaomoji {
+    color: #5F9EA0; 
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Button Layouts */
+.button-group, .button-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Horizontal alignment para sa Slide 5 (YESSSS OR NooOo) */
+.button-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* General Button Styling */
+button {
+    background-color: transparent;
+    border: 3px solid #007BA7; /* Cerulean outline */
+    color: #007BA7;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #007BA7;
+    color: white;
+}
+
+.or-text {
+    color: #007BA7;
+    font-weight: bold;
+}
