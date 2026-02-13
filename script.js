@@ -1,70 +1,39 @@
+/**
+ * Core function to handle slide transitions.
+ * It hides all slides and shows the one matching the provided ID.
+ */
 function goToSlide(slideId) {
-    // Remove active class from all slides
+    // 1. Select all elements with the class 'slide'
     const slides = document.querySelectorAll(".slide");
+    
+    // 2. Remove the 'active' class from every slide to hide them
     slides.forEach(slide => {
         slide.classList.remove("active");
     });
 
-    // Add active class to selected slide
-    document.getElementById(slideId).classList.add("active");
-}
-
-/* Individual slide functions */
-
-function goToSlide2() {
-    goToSlide("slide2");
-}
-
-function goToSlide3() {
-    goToSlide("slide3");
-}
-
-function goToSlide4() {
-    goToSlide("slide4");
-}
-
-function goToSlide5() {
-    goToSlide("slide5");
-}
-
-function goToSlide6() {
-    goToSlide("slide6");
-}
-
-function goToSlide7() {
-    goToSlide("slide7");
-}
-
-function goToSlide8() {
-    goToSlide("slide8");
-}
-
-function goToSlide9() {
-    goToSlide("slide9");
-}
-
-function goToSlide10() {
-    goToSlide("slide10");
-}
-// This is your core logic from the uploaded file
-function goToSlide(slideId) {
-    const slides = document.querySelectorAll(".slide");
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
-
-    const target = document.getElementById(slideId);
-    if (target) {
-        target.classList.add("active");
+    // 3. Find the specific slide we want to show
+    const targetSlide = document.getElementById(slideId);
+    
+    if (targetSlide) {
+        // 4. Add the 'active' class to reveal it
+        targetSlide.classList.add("active");
+        
+        // 5. Scroll to the top of the page so the new slide is perfectly framed
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-        console.error("Slide ID not found: " + slideId);
+        console.error(`Slide Error: Could not find an element with ID "${slideId}"`);
     }
 }
 
-// Instead of writing goToSlide2, goToSlide3, etc. manually
-// You can just call goToSlide('slideX') directly in your HTML onclick.
+/** * Keep these individual functions so your existing HTML buttons 
+ * (like onclick="goToSlide8()") still work perfectly!
+ */
 function goToSlide2() { goToSlide("slide2"); }
 function goToSlide3() { goToSlide("slide3"); }
 function goToSlide4() { goToSlide("slide4"); }
 function goToSlide5() { goToSlide("slide5"); }
-// ... and so on for your other slides
+function goToSlide6() { goToSlide("slide6"); }
+function goToSlide7() { goToSlide("slide7"); }
+function goToSlide8() { goToSlide("slide8"); }
+function goToSlide9() { goToSlide("slide9"); }
+function goToSlide10() { goToSlide("slide10"); }
