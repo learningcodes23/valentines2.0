@@ -143,3 +143,50 @@ button:hover {
     height: auto;
     border-radius: 15px;
 }
+
+.flower-container {
+    position: relative; /* Importante para sa positioning ng button */
+    width: 300px; 
+    height: auto;
+    margin: 20px auto;
+}
+
+.flower-main {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Positioning ng Envelope Button */
+.envelope-btn {
+    position: absolute;
+    bottom: 10%;      /* I-adjust ito para tumama sa tapat ng vase */
+    right: 20%;       /* I-adjust ito para sa tamang pwesto sa kanan */
+    width: 80px;      /* Sukat ng maliit na sobre */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0;
+}
+
+.envelope-btn:hover {
+    transform: scale(1.2) rotate(-5deg); /* Konting galaw kapag tinapatan */
+    background: none;
+}
+
+.envelope-btn img {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional Text Labels (Pink aesthetic) */
+.label-flowers, .label-click {
+    position: absolute;
+    color: #ff8fa3;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 0.8rem;
+}
+
+.label-flowers { bottom: 30%; left: -10%; transform: rotate(-10deg); }
+.label-click { bottom: 40%; right: -5%; }
