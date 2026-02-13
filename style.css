@@ -184,12 +184,11 @@ button:hover {
 .label-flowers, .label-click {
     position: absolute;
     color: #ff8fa3;
-    font-family: 'Comic Sans MS', cursive;
-    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
 }
 
 .label-flowers { bottom: 30%; left: -10%; transform: rotate(-10deg); }
-.label-click { bottom: 40%; right: -5%; }
 /* Schedule Styling */
 .schedule-list {
     margin-top: 20px;
