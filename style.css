@@ -242,5 +242,15 @@ button:hover {
     text-align:justify
 }
 .list {
-    text-align:right
+    text-align:left
+}
+.button-stack {
+  display: flex;
+  flex-direction: column; /* Stacks the button and text */
+  align-items: center;    /* Keeps them centered horizontally */
+  
+  /* Positioning it on the right side of the card */
+  position: absolute;
+  right: 50px;
+  bottom: 80px;
 }
