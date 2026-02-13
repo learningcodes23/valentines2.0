@@ -225,3 +225,16 @@ button:hover {
     min-width: 300px !important;
     height: auto !important;
 }
+#slide_error {
+    background-color: #1e90ff; /* Yung matingkad na asul sa background */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
