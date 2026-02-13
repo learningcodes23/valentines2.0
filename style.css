@@ -183,7 +183,7 @@ button:hover {
 /* Optional Text Labels (Pink aesthetic) */
 .label-flowers, .label-click {
     position: absolute;
-    color: #ff8fa3;
+    color: #007BA7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
 }
