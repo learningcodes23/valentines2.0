@@ -236,6 +236,7 @@ button:hover {
     width: 90%;
     max-width: 400px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: #007BA7;
 }
 .message-content {
     text-align:justify
@@ -255,4 +256,5 @@ button:hover {
 }
 .open-text {
     margin-top: 10px; /* Adjust this number until it looks right */
+    color: #007BA7;
 }
