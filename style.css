@@ -253,7 +253,6 @@ button:hover {
   right: 50px;
   bottom: 40px;
 }
-.click-text span {
-  display: block; /* Forces each span onto its own line */
-  text-align: center; /* Keeps them aligned in the middle */
+.open-text {
+    margin-top: 10px; /* Adjust this number until it looks right */
 }
