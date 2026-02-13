@@ -34,12 +34,15 @@ function goToSlide6() {
 function goToSlide7() {
     goToSlide("slide7");
 }
-function goToSlide8(){
+
+function goToSlide8() {
     goToSlide("slide8");
 }
-function goToSlide9(){
+
+function goToSlide9() {
     goToSlide("slide9");
 }
-function goToSlide10(){
+
+function goToSlide10() {
     goToSlide("slide10");
 }
